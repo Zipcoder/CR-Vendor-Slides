@@ -237,7 +237,7 @@ public class Person { // class signature
 # Utility Clases
 * Defines a set of methods that perform common functions
 
-```
+```java
 // static state; procedural behavior
 public class RandomUtils {
     private static final Random random = new Random();
@@ -271,7 +271,7 @@ public class RandomUtils {
 # Creational Classes
 * used to create other objects
 
-```
+```java
 public class PersonFactory {
     public static Person createRandomPerson() {
         String name = RandomUtils.createString('a', 'z', 5);
@@ -290,7 +290,7 @@ public class PersonFactory {
 # Warehouse Classes
 * store of data accumulated from within an ecosystem
 
-```
+```java
 public class PersonWarehouse {
     private static final Logger logger = Logger.getGlobal();
     private static final ArrayList<Person> people = new ArrayList<>();
@@ -308,7 +308,7 @@ public class PersonWarehouse {
 
 -
 # Managers / Handlers<br>(Decorations)
-```
+```java
 public class PersonManager {
 	private Person person;
 	public PersonManager(Person person) {
@@ -334,7 +334,7 @@ public class PersonManager {
 # Environment<br>(Scope)
 * Where the objects live and interact collectively
 
-```
+```java
 public class Main {
     public static void main(String[] args) {
         PersonFactory.createRandomPerson();
