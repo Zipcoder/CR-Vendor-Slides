@@ -309,9 +309,9 @@ public class PersonWarehouse {
 -
 # Managers / Handlers<br>(Decorations)
 ```java
-public class PersonManager {
+public class PersonHandler {
 	private Person person;
-	public PersonManager(Person person) {
+	public PersonHandler(Person person) {
 		this.person = person;
 	}
 
