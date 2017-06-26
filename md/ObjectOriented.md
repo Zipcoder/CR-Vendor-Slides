@@ -1,4 +1,4 @@
-#Object Oriented Programming
+# Object Oriented Programming
 * Consider object ecosystem FIRST
 	* What are my objects?
 	* Where does `the object` come from?
@@ -18,7 +18,7 @@
 
 -
 -
-#Object Ecosystems
+# Object Ecosystems
 * What are my objects?
 	* What are the properties (fields) of each object?
 	* What are the behaviors (methods) of each object?
@@ -37,7 +37,7 @@
 
 -
 -
-#Different Object Intentions
+# Different Object Intentions
 * Encapsulation
 * Utilities
 * Creation
@@ -48,7 +48,7 @@
 
 -
 -
-#Encapsulation
+# Encapsulation
 * Wraps several data fields into a single entity
 
 ```
@@ -81,14 +81,14 @@ public class Person {
 
 
 -
-#Class Signature
+# Class Signature
 ```java
 public class Person { // class signature
 }
 ```
 
 -
-#Instance Variables<br>(Fields)
+# Instance Variables<br>(Fields)
 ```java
 public class Person { // class signature
 	private String name; // instance variable
@@ -96,7 +96,7 @@ public class Person { // class signature
 ```
 
 -
-#Constructor<br>(Default)
+# Constructor<br>(Default)
 ```java
 public class Person { // class signature
 	private String name; // instance variable
@@ -107,7 +107,7 @@ public class Person { // class signature
 ```
 
 -
-#Constructor<br>(Non-Default)
+# Constructor<br>(Non-Default)
 ```java
 public class Person { // class signature
 	private String myName; // instance variable
@@ -119,7 +119,7 @@ public class Person { // class signature
 ```
 
 -
-#Multiple Constructors
+# Multiple Constructors
 ```java
 public class Person { // class signature
 	private String myName; // instance variable
@@ -136,7 +136,7 @@ public class Person { // class signature
 ```
 
 -
-#Calling Constructors<br>From Constructors
+# Calling Constructors<br>From Constructors
 ```java
 public class Person { // class signature
 	private String myName; // instance variable	private boolean amFemale; // instance variable
@@ -155,7 +155,7 @@ public class Person { // class signature
 ```
 
 -
-#Calling Constructors<br>From Constructors
+# Calling Constructors<br>From Constructors
 ```java
 public class Person { // class signature
 	private String myName; // instance variable	private boolean amFemale; // instance variable
@@ -175,7 +175,7 @@ public class Person { // class signature
 
 
 -
-#Setters<br>(Mutators)
+# Setters<br>(Mutators)
 ```java
 public class Person { // class signature
 	private String myName; // instance variable
@@ -191,7 +191,7 @@ public class Person { // class signature
 ```
 
 -
-#Setters<br>(Mutators)
+# Setters<br>(Mutators)
 ```java
 public class Person { // class signature
 	private String myName; // instance variable
@@ -207,7 +207,7 @@ public class Person { // class signature
 ```
 
 -
-#Getters<br>(Accessors)
+# Getters<br>(Accessors)
 ```java
 public class Person { // class signature
 	private String myName; // instance variable
@@ -234,7 +234,7 @@ public class Person { // class signature
 
 -
 -
-#Utility Clases
+# Utility Clases
 * Defines a set of methods that perform common functions
 
 ```
@@ -268,7 +268,7 @@ public class RandomUtils {
 
 -
 -
-#Creational Classes
+# Creational Classes
 * used to create other objects
 
 ```
@@ -287,7 +287,7 @@ public class PersonFactory {
 
 
 -
-#Warehouse Classes
+# Warehouse Classes
 * store of data accumulated from within an ecosystem
 
 ```
@@ -307,7 +307,7 @@ public class PersonWarehouse {
 ```
 
 -
-#Managers / Handlers<br>(Decorations)
+# Managers / Handlers<br>(Decorations)
 ```
 public class PersonManager {
 	private Person person;
@@ -331,7 +331,7 @@ public class PersonManager {
 
 
 -
-#Environment<br>(Scope)
+# Environment<br>(Scope)
 * Where the objects live and interact collectively
 
 ```
