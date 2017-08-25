@@ -29,12 +29,12 @@ The garbage collector is a program which runs on the Java Virtual Machine which 
 -
 # A Low End Theory `1991`
 
-The original Java project was start in 1991 by Sun Micro Systemes enegineers Patrick Naughton and James Gosling ( Father of Java )
+The original Java project was start in 1991 by Sun Micro Systems enegineers Patrick Naughton and James Gosling ( Father of Java )
 
 -
 
 # Sun Microsystems `1991`
-The wanted to develop a programming language that could be used for consumer devices like:
+They wanted to develop a programming language that could be used for consumer devices like:
 
 1. Microwaves
 2. Calculators
