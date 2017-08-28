@@ -197,3 +197,11 @@ DELETE FROM auto_prices WHERE package = 'Opulent';
 DELETE FROM auto_prices;
 -- WHAT HAVE I DONE!?!
 ```
+
+-
+-
+### Resources
+
+- [SQL Zoo](http://sqlzoo.net/)
+- [H2 Reference](http://www.h2database.com/html/main.html)
+- Code School [Try SQL](https://www.codeschool.com/courses/try-sql)
