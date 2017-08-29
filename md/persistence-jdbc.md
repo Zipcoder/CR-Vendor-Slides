@@ -12,7 +12,7 @@ What is JDBC
 JDBC Boilerplate example
 
 ```Java
-private static final String SQL_INSERT_CAR = 
+private static final String SQL_INSERT_CAR =
 	"insert into car (make, model, year) values (?, ?, ?)";
 @Autowired
 private DataSource datasource;
@@ -48,7 +48,7 @@ JdbcTemplate jdbcTemplate;
 //some examples will use the superinterface JdbcOperations
 
 public void addCar(Car car){
-	jdbcTemplate.update(SQL_INSERT_CAR, 
+	jdbcTemplate.update(SQL_INSERT_CAR,
   				car.getMake(),
   				car.getModel(),
   				car.getYear());
@@ -75,7 +75,7 @@ NamedParameterJdbcTemplate namedParamTemplate;
 private static final String INSERT_CAR =
 	"INSERT INTO car (make, model, year) " +
 	"VALUES (:make, :model, :year);";
-	
+
 public void addCar(Car car){
   Map<String, Object> paramMap = new HashMap<>();
   paramMap.put("make", car.getMake());
@@ -132,7 +132,7 @@ ResultSetExtractor
 ResultSetExtractor Example
 
 ```Java
-public class CarPriceMapExtractor 
+public class CarPriceMapExtractor
 		implements ResultSetExtractor<Map<String, BigDecimal>>{
 	@Override
 	public Map<String, BigDecimal> extractData(ResultSet rs)
@@ -159,7 +159,7 @@ String priceQuery = "SELECT package, price "
 	+ "AND year = ?;";
 
 public Map<String, BigDecimal> getPriceMap(Car c){
-	return jdbcTemplate.query(priceQuery, new CarPriceMapExtractor(), 
+	return jdbcTemplate.query(priceQuery, new CarPriceMapExtractor(),
 		car.getMake(),
 		car.getModel(),
 		car.getYear());
@@ -174,10 +174,13 @@ When do I use which one?
 
 -
 -
-Security Concerns
+## Security Concerns
 
 -
 SQL Injection
+
+- One of the most common DB vulnerabilities
+- Potential danger any time you take user input
 
 -
 Resources
