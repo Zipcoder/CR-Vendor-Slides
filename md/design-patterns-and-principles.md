@@ -147,10 +147,9 @@
 * **Software entities should be open for extension, but closed for modification.**
 * Polymorphic open/closed principle
 * Meyer's open/closed principle
-	* A module will be said to be open if it is still available for extension.
-		* it should be possible to add fields to the data structures it contains, or new elements to the set of functions it performs.
+	* A class is open if it is still available for extension.
 	* A module will be said to be closed if it is available for use by other modules.
-		* This assumes that the module has been given a well-defined, stable description (the interface in the sense of information hiding).
+	* Closed since it may be compiled, stored in a library, baselined, and used by client classes. Open, since any new class may use it as parent, adding new features.
 
 
 
